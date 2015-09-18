@@ -9,6 +9,7 @@
 import Foundation
 
 enum CTSwiftHelperError: ErrorType {
+    case UncontainedKeyError(message: String)
     case IncompatibleTypeError(message: String)
 }
 
@@ -16,14 +17,14 @@ public func assign<T>(inout variable variable: T)(value: T) {
     variable = value
 }
 
-public func value<T>(from object: T)(forKey key: String) -> Any? {
+public func value<T>(from object: T)(forKey key: String) throws -> Any {
     let mirror = Mirror(reflecting: object)
     
     for (name, value) in mirror.children where name == key {
         return value
     }
     
-    return nil
+    throw CTSwiftHelperError.UncontainedKeyError(message: "Object \(object) does not contained \(key) value")
 }
 
 public func isType<T, U>(type: T.Type)(object: U) -> Bool {

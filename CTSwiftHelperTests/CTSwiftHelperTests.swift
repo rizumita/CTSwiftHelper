@@ -9,6 +9,10 @@
 import XCTest
 @testable import CTSwiftHelper
 
+class Sample {
+    var a: String = "test"
+}
+
 class CTSwiftHelperTests: XCTestCase {
     
     override func setUp() {
@@ -22,10 +26,27 @@ class CTSwiftHelperTests: XCTestCase {
     }
     
     func testAssign() {
+        let s = Sample()
         
+        assign(variable: &s.a)(value: "new value")
+        XCTAssertEqual(s.a, "new value")
     }
 
     func testValueFromObjectForKey() {
+        do {
+            let avalue = try value(from: Sample())(forKey: "a") as! String
+            XCTAssertEqual(avalue, "test")
+        }
+        catch {
+            XCTFail()
+        }
+
+        do {
+            try value(from: Sample())(forKey: "b")
+            XCTFail()
+        }
+        catch {
+        }
     }
     
     func testIsType() {
