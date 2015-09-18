@@ -8,11 +8,6 @@
 
 import Foundation
 
-enum CTSwiftHelperError: ErrorType {
-    case UncontainedKeyError(message: String)
-    case IncompatibleTypeError(message: String)
-}
-
 public func assign<T>(inout variable variable: T)(value: T) {
     variable = value
 }
