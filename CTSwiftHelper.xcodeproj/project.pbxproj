@@ -10,6 +10,7 @@
 		6A4FF61B1BAC4773007800C4 /* CTSwiftHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A4FF61A1BAC4773007800C4 /* CTSwiftHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A4FF6221BAC4773007800C4 /* CTSwiftHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4FF6171BAC4773007800C4 /* CTSwiftHelper.framework */; settings = {ASSET_TAGS = (); }; };
 		6A4FF6271BAC4773007800C4 /* CTSwiftHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4FF6261BAC4773007800C4 /* CTSwiftHelperTests.swift */; };
+		6A4FF6321BAC4785007800C4 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4FF6311BAC4785007800C4 /* HelperFunctions.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		6A4FF6211BAC4773007800C4 /* CTSwiftHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTSwiftHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A4FF6261BAC4773007800C4 /* CTSwiftHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTSwiftHelperTests.swift; sourceTree = "<group>"; };
 		6A4FF6281BAC4773007800C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A4FF6311BAC4785007800C4 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				6A4FF61A1BAC4773007800C4 /* CTSwiftHelper.h */,
 				6A4FF61C1BAC4773007800C4 /* Info.plist */,
+				6A4FF6311BAC4785007800C4 /* HelperFunctions.swift */,
 			);
 			path = CTSwiftHelper;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 		6A4FF60E1BAC4773007800C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = CAPH;
 				TargetAttributes = {
@@ -193,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A4FF6321BAC4785007800C4 /* HelperFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,28 +312,33 @@
 		6A4FF62C1BAC4773007800C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CTSwiftHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.CTSwiftHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		6A4FF62D1BAC4773007800C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CTSwiftHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.CTSwiftHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,6 +385,7 @@
 				6A4FF62D1BAC4773007800C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A4FF62E1BAC4773007800C4 /* Build configuration list for PBXNativeTarget "CTSwiftHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +394,7 @@
 				6A4FF6301BAC4773007800C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -21,16 +21,29 @@ class CTSwiftHelperTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAssign() {
+        
+    }
+
+    func testValueFromObjectForKey() {
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    func testIsType() {
+        XCTAssertTrue(isType(String.self)(object: "Test"))
+        XCTAssertTrue(isType(AnyObject.self)(object: "Test"))
+        XCTAssertFalse(isType(Int.self)(object: "Test"))
+    }
+    
+    func testCast() {
+        let result = try! cast(to: String.self)(object: ("Test" as AnyObject))
+        XCTAssertEqual("\(result.dynamicType)", "\(String.self)")
+        
+        do {
+            try cast(to: Int.self)(object: ("Test" as AnyObject))
+            XCTFail()
+        }
+        catch {
         }
     }
-    
+
 }
