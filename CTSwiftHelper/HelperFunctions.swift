@@ -33,3 +33,7 @@ public func cast<T, U>(to type: T.Type)(object: U) throws -> T {
     
     throw CTSwiftHelperError.IncompatibleTypeError(message: "Object type is \(object.dynamicType), but required type is \(type.self)")
 }
+
+public func not<T>(closure: T -> Bool)(arg: T) -> Bool {
+    return !closure(arg)
+}

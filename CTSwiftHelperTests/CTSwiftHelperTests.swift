@@ -66,5 +66,11 @@ class CTSwiftHelperTests: XCTestCase {
         catch {
         }
     }
+    
+    func testNot() {
+        let flagClosure = { (text: String) -> Bool in text.characters.count > 3 }
+        XCTAssertTrue(not(flagClosure)(arg: ""))
+        XCTAssertFalse(not(flagClosure)(arg: "abcd"))
+    }
 
 }
