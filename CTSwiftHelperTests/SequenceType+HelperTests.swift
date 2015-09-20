@@ -50,4 +50,13 @@ class SequenceType_HelperTests: XCTestCase {
         }
     }
     
+    func zipWithIndex() {
+        let range = 0...100
+        let zipped = range.zipWithIndex()
+        XCTAssertEqual(zipped.count, 101)
+        for (index, element) in zipped {
+            XCTAssertEqual(index, element)
+        }
+    }
+    
 }

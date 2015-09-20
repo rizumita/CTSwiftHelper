@@ -12,6 +12,8 @@
 		6A4FF6271BAC4773007800C4 /* CTSwiftHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4FF6261BAC4773007800C4 /* CTSwiftHelperTests.swift */; };
 		6A4FF6321BAC4785007800C4 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4FF6311BAC4785007800C4 /* HelperFunctions.swift */; settings = {ASSET_TAGS = (); }; };
 		6A4FF6341BAC5ACD007800C4 /* CTSwiftHelperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4FF6331BAC5ACD007800C4 /* CTSwiftHelperError.swift */; settings = {ASSET_TAGS = (); }; };
+		6A4FF6361BAE2453007800C4 /* CollectionType+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4FF6351BAE2453007800C4 /* CollectionType+Helper.swift */; settings = {ASSET_TAGS = (); }; };
+		6A4FF6381BAE29C4007800C4 /* CollectionType+HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4FF6371BAE29C4007800C4 /* CollectionType+HelperTests.swift */; settings = {ASSET_TAGS = (); }; };
 		6A6A41341BAD58CC00C22A45 /* SequenceType+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A41331BAD58CC00C22A45 /* SequenceType+Helper.swift */; settings = {ASSET_TAGS = (); }; };
 		6AD3E4B41BAE14300089B21B /* SequenceType+HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD3E4B31BAE14300089B21B /* SequenceType+HelperTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -35,6 +37,8 @@
 		6A4FF6281BAC4773007800C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A4FF6311BAC4785007800C4 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		6A4FF6331BAC5ACD007800C4 /* CTSwiftHelperError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTSwiftHelperError.swift; sourceTree = "<group>"; };
+		6A4FF6351BAE2453007800C4 /* CollectionType+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionType+Helper.swift"; sourceTree = "<group>"; };
+		6A4FF6371BAE29C4007800C4 /* CollectionType+HelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionType+HelperTests.swift"; sourceTree = "<group>"; };
 		6A6A41331BAD58CC00C22A45 /* SequenceType+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+Helper.swift"; sourceTree = "<group>"; };
 		6AD3E4B31BAE14300089B21B /* SequenceType+HelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+HelperTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +88,7 @@
 				6A4FF6311BAC4785007800C4 /* HelperFunctions.swift */,
 				6A4FF6331BAC5ACD007800C4 /* CTSwiftHelperError.swift */,
 				6A6A41331BAD58CC00C22A45 /* SequenceType+Helper.swift */,
+				6A4FF6351BAE2453007800C4 /* CollectionType+Helper.swift */,
 			);
 			path = CTSwiftHelper;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			children = (
 				6A4FF6261BAC4773007800C4 /* CTSwiftHelperTests.swift */,
 				6AD3E4B31BAE14300089B21B /* SequenceType+HelperTests.swift */,
+				6A4FF6371BAE29C4007800C4 /* CollectionType+HelperTests.swift */,
 				6A4FF6281BAC4773007800C4 /* Info.plist */,
 			);
 			path = CTSwiftHelperTests;
@@ -209,6 +215,7 @@
 				6A6A41341BAD58CC00C22A45 /* SequenceType+Helper.swift in Sources */,
 				6A4FF6321BAC4785007800C4 /* HelperFunctions.swift in Sources */,
 				6A4FF6341BAC5ACD007800C4 /* CTSwiftHelperError.swift in Sources */,
+				6A4FF6361BAE2453007800C4 /* CollectionType+Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A4FF6381BAE29C4007800C4 /* CollectionType+HelperTests.swift in Sources */,
 				6AD3E4B41BAE14300089B21B /* SequenceType+HelperTests.swift in Sources */,
 				6A4FF6271BAC4773007800C4 /* CTSwiftHelperTests.swift in Sources */,
 			);

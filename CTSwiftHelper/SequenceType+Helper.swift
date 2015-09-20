@@ -20,5 +20,11 @@ public extension SequenceType {
 
         return result
     }
+
+    public func zipWithIndex() -> [(Int, Generator.Element)] {
+        return self.enumerate().map { (index, element) -> (Int, Generator.Element) in
+            return (index, element)
+        }
+    }
     
 }
