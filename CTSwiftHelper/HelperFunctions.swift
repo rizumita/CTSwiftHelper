@@ -37,3 +37,8 @@ public func cast<T, U>(to type: T.Type)(object: U) throws -> T {
 public func not<T>(closure: T -> Bool)(arg: T) -> Bool {
     return !closure(arg)
 }
+
+public func compare<T: Comparable>(a: T, ascending: Bool = true)(_ b: T) -> Bool {
+    let op: (T, T) -> Bool = ascending ? (<) : (>)
+    return op(a, b)
+}

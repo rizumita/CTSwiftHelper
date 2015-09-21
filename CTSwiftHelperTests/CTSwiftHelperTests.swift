@@ -72,5 +72,12 @@ class CTSwiftHelperTests: XCTestCase {
         XCTAssertTrue(not(flagClosure)(arg: ""))
         XCTAssertFalse(not(flagClosure)(arg: "abcd"))
     }
+    
+    func testCompare() {
+        let a = "a"
+        let b = "b"
+        XCTAssertTrue(compare(a)(b))
+        XCTAssertFalse(compare(a, ascending: false)(b))
+    }
 
 }

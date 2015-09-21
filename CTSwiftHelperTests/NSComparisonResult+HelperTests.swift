@@ -1,5 +1,5 @@
 //
-//  NSComparisonResult+Helper.swift
+//  NSComparisonResult+HelperTests.swift
 //  CTSwiftHelper
 //
 //  Created by 和泉田 領一 on 2015/09/21.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class NSComparisonResult_Helper: XCTestCase {
+class NSComparisonResult_HelperTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
